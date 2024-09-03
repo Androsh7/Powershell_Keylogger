@@ -3,6 +3,8 @@ THIS TOOL IS FOR EDUCATIONAL AND RESEARCH PURPOSES ONLY
 
 MALICIOUS USE OF THIS TOOL MAY CONSTITUTE A CRIME
 
+[VirusTotal Report](https://www.virustotal.com/gui/file/7ea6418bd30f6caa1cb71042dd0b098a9633e9a4a8bdffaca0361c2fe95db6af/detection)
+
 # Running Tool
 
 Often times windows powershell prevents running scripts due to execution policy, this can be avoided by using the following syntax

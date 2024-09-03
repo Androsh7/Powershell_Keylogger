@@ -25,6 +25,6 @@ Later functional version may do this automatically, but for now here is the outp
 | 20 | Caps Lock Key |
 | 48 - 57 | 0 - 9 ([ASCII](https://www.asciitable.com/))|
 | 65 - 90 | A - Z ([ASCII](https://www.asciitable.com/))|
-| 160, 16 | Left Shift |
-| 161, 16 | Right Shift |
+| 160:16 | Left Shift |
+| 161:16 | Right Shift |
 | 219 | Delete |

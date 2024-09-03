@@ -16,9 +16,9 @@ do
 				8 { $outkey = "BACK" }
 				9 { $outkey = "TAB" }
 				13 { $outkey = "ENTER" }
-				16 { $outkey = "SHIFT" }
-				17 { $outkey = "CTRL" }
-				18 { $outkey = "ALT" }
+				16 { continue } # SHIFT
+				17 { continue } # CTRL
+				18 { continue } # ALT
 				20 { $outkey = "CAPS" }
 				27 { $outkey = "ESC" }
 				32 { $outkey = "SPACE" }
@@ -26,11 +26,11 @@ do
 				34 { $outkey = "Page_UP" }
 				36 { $outkey = "HOME" }
 				91 { $outkey = "WIN" }
-				160 { $outkey = "LEFT" } # for shift
-				161 { $outkey = "RIGHT" } # for shift
-				162 { $outkey = "LEFT" } # for CTRL
-				163 { $outkey = "RIGHT" } # for CTRL
-				164 { $outkey = "LEFT" } # for ALT
+				160 { $outkey = "LSHIFT" } # for shift
+				161 { $outkey = "RSHIFT" } # for shift
+				162 { $outkey = "LCTRL" } # for CTRL
+				163 { $outkey = "RCTRL" } # for CTRL
+				164 { $outkey = "LALT" } # for ALT
 				187 { $outkey = "=" }
 				189 { $outkey = "-" }
 				219 { $outkey = "[" }

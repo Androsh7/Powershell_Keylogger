@@ -15,3 +15,8 @@ powershell.exe -ExecutionPolicy Bypass -File keylogger.ps1
 This command does not require elevated permissions
 
 To run this in the background append the `-windowstyle hidden` argument to the previous command
+
+# Establishing Persistence
+
+## HKLM/HKCU Key
+

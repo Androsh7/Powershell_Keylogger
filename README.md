@@ -4,7 +4,7 @@ THIS TOOL IS FOR EDUCATIONAL AND RESEARCH PURPOSES ONLY
 MALICIOUS USE OF THIS TOOL MAY CONSTITUTE A CRIME
 
 
-![image](https://github.com/user-attachments/assets/512bdf4c-6e45-4d60-b867-6433ae9cd6b0)
+![image](https://github.com/user-attachments/assets/62e2e45e-94a6-49e6-830d-5d7bb5f7754d)
 [VirusTotal Report](https://www.virustotal.com/gui/file/5eea445524cc3ce4f703ff86436e4cd513c558e50feb887f2a0b26ca38eca845/detection)
 
 # Running Tool
